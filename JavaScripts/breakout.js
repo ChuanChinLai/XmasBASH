@@ -120,6 +120,7 @@ function create()
 	
 	//background music:
 	BGM = game.add.audio('BGM');
+	BGM.loop = true
     BGM.play();
 	
 	//For debug
@@ -224,7 +225,6 @@ function BallHitTop(ball)
 	if(ball.y <= 0)
 	{
 		ball.kill();
-		create_ball();
 		create_ball();
 	}
 }

@@ -19,13 +19,15 @@ var LastSpeedUpTime = 0;
 var ballSize = 1.0
 
 //Parameters for game producers
-var CooldownTime_Ball = 720.0;
-var CooldownTime_Gift = 0.4;
-var SpeedManager_UpdateTime = 2;
+var VelocityFector_Ball = 0.8;
+var MAX_VelocityFector_Ball = 1.7;
+var CooldownTime_Ball = 15.0;
+var CooldownTime_Gift = 0.55;
+var SpeedManager_UpdateTime = 4;
 
-var VelocityFector_Ball = 2.0;
-var MovingSpeed_GiftGroup = 0.2;
-var DropSpeed_Gift = 3.0;
+
+var MovingSpeed_GiftGroup = 0.3;
+var DropSpeed_Gift = 5.3;
 
 
 function SpeedManager()
@@ -35,7 +37,7 @@ function SpeedManager()
 		LastSpeedUpTime = game.time.totalElapsedSeconds();
 		
 		VelocityFector_Ball *= 1.1;
-		VelocityFector_Ball = Math.min(VelocityFector_Ball, 1.5)
+		VelocityFector_Ball = Math.min(VelocityFector_Ball, MAX_VelocityFector_Ball)
 		
 		MovingSpeed_GiftGroup *= 1.1;
 		DropSpeed_Gift *= 1.1;

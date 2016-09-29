@@ -37,17 +37,15 @@ ImageManager.prototype.Init = function()
 	this.SparkLine_1 = game.add.tileSprite(0, 420, SCREEN_WIDTH, 100, 'snowline');
 	this.SparkLine_2 = game.add.tileSprite(SCREEN_WIDTH, 420, SCREEN_WIDTH, 100, 'snowline');
 	
-	game.add.tileSprite(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 'bar');
-	
-	
-	this.Deer_1 = game.add.sprite(game.world.centerX - 150, SCREEN_HEIGHT - 200, 'deers');
+	this.Deer_1 = game.add.sprite(game.world.centerX - 180, SCREEN_HEIGHT - 200, 'deers');
 	this.Deer_1.animations.add('jump');
 	this.Deer_1.animations.play('jump', 10, true);
 	
-	this.Deer_2 = game.add.sprite(game.world.centerX, SCREEN_HEIGHT - 200, 'deers');
+	this.Deer_2 = game.add.sprite(game.world.centerX -40, SCREEN_HEIGHT - 200, 'deers');
 	this.Deer_2.animations.add('jump');
 	this.Deer_2.animations.play('jump', 10, true);
-	
+		
+	game.add.tileSprite(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 'bar');
 	
 	
 	this.Deer_Dance_1 = game.add.sprite(game.world.centerX - 160, SCREEN_HEIGHT - 260, 'deer_dance_2');

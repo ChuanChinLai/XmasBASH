@@ -48,12 +48,12 @@ ImageManager.prototype.Init = function()
 	game.add.tileSprite(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 'bar');
 	
 	
-	this.Deer_Dance_1 = game.add.sprite(game.world.centerX - 160, SCREEN_HEIGHT - 260, 'deer_dance_2');
+	this.Deer_Dance_1 = game.add.sprite(game.world.centerX - 150, SCREEN_HEIGHT - 260, 'deer_dance_2');
 	this.Deer_Dance_1.animations.add('dance');
 	this.Deer_Dance_1.animations.play('dance', 10, true);
 	this.Deer_Dance_1.visible = false;
 	
-	this.Deer_Dance_2 = game.add.sprite(game.world.centerX - 10, SCREEN_HEIGHT - 260, 'deer_dance_3');
+	this.Deer_Dance_2 = game.add.sprite(game.world.centerX, SCREEN_HEIGHT - 260, 'deer_dance_3');
 	this.Deer_Dance_2.animations.add('dance');
 	this.Deer_Dance_2.animations.play('dance', 10, true);
 	this.Deer_Dance_2.visible = false;

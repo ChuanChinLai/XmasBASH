@@ -39,7 +39,7 @@ function SpeedManager()
 		VelocityFector_Ball *= 1.1;
 		VelocityFector_Ball = Math.min(VelocityFector_Ball, MAX_VelocityFector_Ball)
 		
-		MovingSpeed_GiftGroup *= 1.07;
+		MovingSpeed_GiftGroup *= 1.095;
 		DropSpeed_Gift *= 1.1;
 	}
 }
